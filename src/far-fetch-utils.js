@@ -18,3 +18,11 @@ export async function getToken(loginInfo, type) {
 
     return data.token;
 }
+
+export async function getToDos(token){
+
+
+
+
+    
+}

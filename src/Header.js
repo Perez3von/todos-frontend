@@ -12,9 +12,8 @@ class Header extends Component {
                         Home 
                     </NavLink>
                     <NavLink exact to='/signin'>
-                        Sign-in
+                        Login
                     </NavLink>
-                    
                     <NavLink exact to='/signup'>
                         Sign-up
                     </NavLink>
