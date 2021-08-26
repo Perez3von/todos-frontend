@@ -12,10 +12,9 @@ class ToDos extends Component {
     };
 
     fetchTodos = async () => {
-        // call getTodos in the fetch-utils file -- outsourcing the fetch to fetch-utils
+       
         const data = await getTodos(this.props.token);
-        // set the todos in state
-        this.setState({ todos: data });
+            this.setState({ todos: data });
     };
 
     handleSubmit = async (e) => {
@@ -37,13 +36,16 @@ class ToDos extends Component {
         const data = await updateTodo(this.props.token, todo);
         this.fetchTodos();
     };
+    
 
     render() {
         return (
             <>
-                <h1>My To Do List</h1>
+                <h1>USER</h1>
                 <section className="todo-list">
+                {console.log(this.state.todos)}
                     {this.state.todos.map((todo) => (
+                
                         <div className="todo-item" key={todo.id}>
                             <input
                                 type="checkbox"
