@@ -20,7 +20,7 @@ class ToDos extends Component {
     handleSubmit = async (e) => {
         e.preventDefault();
         const data = await createTodo(this.props.token, {
-            description: this.state.newTodo,
+            todo: this.state.newTodo,
             completed: false,
         });
         this.setState({ newTodo: '' });
@@ -33,7 +33,7 @@ class ToDos extends Component {
 
     handleCompleted = async (todo) => {
         todo.completed = !todo.completed;
-        const data = await updateTodo(this.props.token, todo);
+        // const data = await updateTodo(this.props.token, todo);
         this.fetchTodos();
     };
     
@@ -52,7 +52,7 @@ class ToDos extends Component {
                                 checked={todo.completed}
                                 onChange={() => this.handleCompleted(todo)}
                             ></input>
-                            <label>{todo.description}</label>
+                            <label>{todo.todo}</label>
                         </div>
                     ))}
                 </section>
