@@ -1,4 +1,4 @@
-const URL = 'http://localhost:7890';
+const URL = 'https://gentle-savannah-81499.herokuapp.com';
 
 export async function getToken(loginInfo, type) {
     
