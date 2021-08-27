@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { createTodo, updateTodo, getTodos  } from './far-fetch-utils.js';
+import { createTodo, getTodos  } from './far-fetch-utils.js';
 
 
 class ToDos extends Component {
