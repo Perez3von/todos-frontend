@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { getToken } from './far-fetch-utils.js';
-const router = require('browser-router');
+
 
 class Auth extends Component {
     state = { 

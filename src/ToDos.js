@@ -33,7 +33,7 @@ class ToDos extends Component {
 
     handleCompleted = async (todo) => {
         todo.completed = !todo.completed;
-        const data = await updateTodo(this.props.token, todo);
+        // const data = await updateTodo(this.props.token, todo);
         this.fetchTodos();
     };
     
