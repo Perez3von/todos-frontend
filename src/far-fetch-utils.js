@@ -12,7 +12,7 @@ export async function getToken(loginInfo, type) {
         body: JSON.stringify(loginInfo),
     });
     const data = await resp.json();
-    console.log(data);
+    
    
     localStorage.setItem('TOKEN', data.token);
 
@@ -44,7 +44,7 @@ export async function createTodo(token, todo) {
         body: JSON.stringify(todo),
     });
     const data = await resp.json();
-    console.log(data);
+    
     return data;
 }
 
